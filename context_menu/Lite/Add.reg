@@ -1,0 +1,69 @@
+Windows Registry Editor Version 5.00
+
+; Create Menu
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts]
+"Icon"="C:\\Tools\\icon\\ffmpeg_icon.ico"
+"MUIVerb"="Auto Scripts"
+"SubCommands"=""
+
+; Checksum
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\01_checksum]
+"Icon"="C:\\Tools\\icon\\checksum_icon.ico"
+"MUIVerb"="Checksum"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\01_checksum\command]
+@="\"C:\\Tools\\batch\\Checksum.bat\" \"%1\""
+
+; Conveter
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\02_video]
+"Icon"="C:\\Tools\\icon\\cv_icon.ico"
+"MUIVerb"="Convert Video"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\02_video\command]
+@="\"C:\\Tools\\batch\\Convert_Video.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_audio]
+"Icon"="C:\\Tools\\icon\\ca_icon.ico"
+"MUIVerb"="Convert Audio"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_audio\command]
+@="\"C:\\Tools\\batch\\Convert_Audio.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_image]
+"Icon"="C:\\Tools\\icon\\ci_icon.ico"
+"MUIVerb"="Convert Image"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_image\command]
+@="\"C:\\Tools\\batch\\Convert_Image.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_compress]
+"Icon"="C:\\Tools\\icon\\cp_icon.ico"
+"MUIVerb"="Compress Video"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_compress\command]
+@="\"C:\\Tools\\batch\\Compress_Video.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_extract]
+"Icon"="C:\\Tools\\icon\\ext_icon.ico"
+"MUIVerb"="Extract Media"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_extract\command]
+@="\"C:\\Tools\\batch\\Extract_Media.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_480x680]
+"Icon"="C:\\Tools\\icon\\480x680_icon.ico"
+"MUIVerb"="Resize image to 480x680"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_480x680\command]
+@="\"C:\\Tools\\batch\\Resize_Image_to_480x680.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_960x540]
+"Icon"="C:\\Tools\\icon\\960x540_icon.ico"
+"MUIVerb"="Resize image to 960x540"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_960x540\command]
+@="\"C:\\Tools\\batch\\Resize_Image_to_960x540.bat\" \"%1\""
