@@ -2,6 +2,12 @@
 setlocal enabledelayedexpansion
 set "rhash_path=C:\Tools\bin\rhash.exe"
 
+if not exist "%rhash_path%" (
+    echo rhash not found! Please check the path.
+    pause
+    exit /b
+)
+
 :: Check if no file was selected
 if "%~1"=="" (
     echo Please select at least one video file for conversion.
@@ -21,19 +27,19 @@ for %%f in (%*) do (
     set "filename=%%~nxf"
 
     :: Get checksums
-    for /f "tokens=1" %%A in ('%rhash_path% --crc32 --simple %%f') do (
+    for /f "tokens=1" %%A in ('%rhash_path% --crc32 --simple --uppercase %%f') do (
         set "crc32=%%A"
     )
 
-    for /f "tokens=1" %%A in ('%rhash_path% --md5 --simple %%f') do (
+    for /f "tokens=1" %%A in ('%rhash_path% --md5 --simple --uppercase %%f') do (
         set "md5=%%A"
     )
 
-    for /f "tokens=1" %%A in ('%rhash_path% --sha1 --simple %%f') do (
+    for /f "tokens=1" %%A in ('%rhash_path% --sha1 --simple --uppercase %%f') do (
         set "sha1=%%A"
     )
 
-    for /f "tokens=1" %%A in ('%rhash_path% --ed2k --simple %%f') do (
+    for /f "tokens=1" %%A in ('%rhash_path% --ed2k --simple --uppercase %%f') do (
         set "ed2khash=%%A"
     )
     

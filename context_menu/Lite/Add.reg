@@ -7,6 +7,7 @@ Windows Registry Editor Version 5.00
 "SubCommands"=""
 
 ; Checksum
+; Checksum
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\01_checksum]
 "Icon"="C:\\Tools\\icon\\checksum_icon.ico"
 "MUIVerb"="Checksum"
