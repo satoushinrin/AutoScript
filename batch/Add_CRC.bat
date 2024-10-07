@@ -15,21 +15,30 @@ if "%~1"=="" (
     exit /b
 )
 
-:: Checksum and rename
+set "filename=%~1"
+
+:: Checksum
 for %%f in (%*) do (
     set "file=%%~f"
 
-    :: Get file name and extension
-    set "filename=%%~nf"
-    set "extension=%%~xf"
+    :: Get file name and size
+    set "filename=%%~nxf"
 
-    :: Get checksums (in uppercase)
+    :: Get checksums
     for /f "tokens=1" %%A in ('%rhash_path% --crc32 --simple --uppercase %%f') do (
         set "crc32=%%A"
     )
-
-    :: Rename the file with original name + [crc32] + extension
-    set "newname=!filename! [!crc32!]!extension!"
-    rename %%f "!newname!"
 )
-exit /b
+echo %filename% | findstr /c:"%crc32%" >nul
+if %errorlevel% equ 0 (
+    exit /b 1
+)
+
+for %%F in ("%filename%") do (
+    set "name=%%~nF"
+    set "ext=%%~xF"
+)
+
+set "newfilename=!name! [!crc32!]!ext!"
+rename "%filename%" "!newfilename!"
+exit /b 1
