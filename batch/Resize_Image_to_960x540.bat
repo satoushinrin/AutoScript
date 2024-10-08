@@ -1,4 +1,6 @@
 @echo off
+setlocal enabledelayedexpansion
+
 set "ffmpeg_path=C:\Tools\bin\ffmpeg.exe"
 
 :: Check ffmpeg exists
@@ -8,10 +10,15 @@ if not exist %ffmpeg_path% (
     exit /b
 )
 
+:: Check if no file was selected
+if "%~1"=="" (
+    echo Please select at least one video file for conversion.
+    pause
+    exit /b
+)
+
 :: Send files to cmd
 for %%a in (%*) do (
-    echo Processing: %%~nxa
-    
     :: Check output directory exists
     set "input_file=%%~a"
     set "input_dir=%%~dpa"
@@ -21,9 +28,11 @@ for %%a in (%*) do (
         mkdir "%input_dir%Converted"
     )
     
-    :: Use ffmpeg to resize the image
-    "%ffmpeg_path%" -i "%%~a" -vf "scale=960:540" -q:v 1 "%input_dir%Converted\%%~na.jpg"
+    set "rename=h-%%~na"
+    set "rename=!rename: =-!"
     
-    echo Done: %%~nxa
+    :: Use ffmpeg to resize the image
+    "%ffmpeg_path%" -i "%%~a" -vf "scale=960:540" -q:v 1 "%input_dir%Converted\!rename!.jpg"
+
 )
 exit /b

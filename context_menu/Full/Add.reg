@@ -93,7 +93,7 @@ Windows Registry Editor Version 5.00
 "MUIVerb"="Resize image to 480x680"
 
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_480x680\command]
-@="\"C:\\Tools\\batch\\Resize_Image_to_480x680.bat\" \"%1\""
+@="wscript \"C:\\Tools\\batch\\vbs\\Resize_480x680.vbs\" \"%1\""
 
 
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\12_960x540]
@@ -101,4 +101,4 @@ Windows Registry Editor Version 5.00
 "MUIVerb"="Resize image to 960x540"
 
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\12_960x540\command]
-@="\"C:\\Tools\\batch\\Resize_Image_to_960x540.bat\" \"%1\""
+@="wscript \"C:\\Tools\\batch\\vbs\\Resize_960x540.vbs\" \"%1\""
