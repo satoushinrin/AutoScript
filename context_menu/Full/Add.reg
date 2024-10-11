@@ -88,11 +88,11 @@ Windows Registry Editor Version 5.00
 @="\"C:\\Tools\\batch\\Extract_Media.bat\" \"%1\""
 
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_crcmod]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_modcrc]
 "Icon"="C:\\Tools\\icon\\crc_modify_icon.ico"
-"MUIVerb"="CRC Modify"
+"MUIVerb"="Modify CRC"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_crcmod\command]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_modcrc\command]
 @="\"C:\\Tools\\batch\\Modify_CRC.bat\" \"%1\""
 
 
