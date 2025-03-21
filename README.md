@@ -52,14 +52,15 @@ Tool features:
 
 7. Resize Image to 480x680
 8. Resize Image to 960x540
+9. Resize Image Custom
 
 \- Just like the name
 
+
 Advanced features (Not available in lite version)
 
-9. Create ED2L Link
-10. Update Anime in the Database (Edit your Username and API_Key)
-11. Create Keyframes
+10. Add CRC
+11. Mod CRC
 
 
 Script by Shinrin, thank to:
