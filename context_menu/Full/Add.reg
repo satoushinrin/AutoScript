@@ -22,91 +22,63 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\02_addcrc\command]
 @="wscript \"C:\\Tools\\batch\\vbs\\Add_CRC.vbs\" \"%1\""
 
-
-; Create ed2k link
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_ed2klink]
-"Icon"="C:\\Tools\\icon\\ed2klink_icon.ico"
-"MUIVerb"="Create ED2K Link"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_ed2klink\command]
-@="\"C:\\Tools\\batch\\Create_Ed2kLink.bat\" \"%1\""
-
-; Dump anime
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_dump]
-"Icon"="C:\\Tools\\icon\\dump_icon.ico"
-"MUIVerb"="Update Database"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_dump\command]
-@="\"C:\\Tools\\batch\\Dump_Anime.bat\" \"%1\""
-
-
-; Create Keyframes
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_keyframes]
-"Icon"="C:\\Tools\\icon\\keyframe_icon.ico"
-"MUIVerb"="Create Keyframes"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_keyframes\command]
-@="\"C:\\Tools\\batch\\Create_Keyframes.bat\" \"%1\""
-
-
-; Conveter
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_video]
-"Icon"="C:\\Tools\\icon\\cv_icon.ico"
-"MUIVerb"="Convert Video"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_video\command]
-@="\"C:\\Tools\\batch\\Convert_Video.bat\" \"%1\""
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_audio]
-"Icon"="C:\\Tools\\icon\\ca_icon.ico"
-"MUIVerb"="Convert Audio"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_audio\command]
-@="\"C:\\Tools\\batch\\Convert_Audio.bat\" \"%1\""
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_image]
-"Icon"="C:\\Tools\\icon\\ci_icon.ico"
-"MUIVerb"="Convert Image"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_image\command]
-@="\"C:\\Tools\\batch\\Convert_Image.bat\" \"%1\""
-
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_compress]
-"Icon"="C:\\Tools\\icon\\cp_icon.ico"
-"MUIVerb"="Compress Video"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_compress\command]
-@="\"C:\\Tools\\batch\\Compress_Video.bat\" \"%1\""
-
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_extract]
-"Icon"="C:\\Tools\\icon\\ext_icon.ico"
-"MUIVerb"="Extract Media"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_extract\command]
-@="\"C:\\Tools\\batch\\Extract_Media.bat\" \"%1\""
-
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_modcrc]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_modcrc]
 "Icon"="C:\\Tools\\icon\\crc_modify_icon.ico"
 "MUIVerb"="Modify CRC"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_modcrc\command]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\03_modcrc\command]
 @="\"C:\\Tools\\batch\\Modify_CRC.bat\" \"%1\""
 
+; Conveter
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_video]
+"Icon"="C:\\Tools\\icon\\cv_icon.ico"
+"MUIVerb"="Convert Video"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\12_480x680]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\04_video\command]
+@="\"C:\\Tools\\batch\\Convert_Video.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_audio]
+"Icon"="C:\\Tools\\icon\\ca_icon.ico"
+"MUIVerb"="Convert Audio"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\05_audio\command]
+@="\"C:\\Tools\\batch\\Convert_Audio.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_image]
+"Icon"="C:\\Tools\\icon\\ci_icon.ico"
+"MUIVerb"="Convert Image"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\06_image\command]
+@="\"C:\\Tools\\batch\\Convert_Image.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_compress]
+"Icon"="C:\\Tools\\icon\\cp_icon.ico"
+"MUIVerb"="Compress Video"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\07_compress\command]
+@="\"C:\\Tools\\batch\\Compress_Video.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_extract]
+"Icon"="C:\\Tools\\icon\\ext_icon.ico"
+"MUIVerb"="Extract Media"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\08_extract\command]
+@="\"C:\\Tools\\batch\\Extract_Media.bat\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_480x680]
 "Icon"="C:\\Tools\\icon\\480x680_icon.ico"
 "MUIVerb"="Resize image to 480x680"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\12_480x680\command]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_480x680\command]
 @="wscript \"C:\\Tools\\batch\\vbs\\Resize_480x680.vbs\" \"%1\""
 
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\13_960x540]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_960x540]
 "Icon"="C:\\Tools\\icon\\960x540_icon.ico"
 "MUIVerb"="Resize image to 960x540"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\13_960x540\command]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_960x540\command]
 @="wscript \"C:\\Tools\\batch\\vbs\\Resize_960x540.vbs\" \"%1\""
