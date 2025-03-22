@@ -68,25 +68,25 @@ Windows Registry Editor Version 5.00
 @="\"C:\\Tools\\batch\\Extract_Media.bat\" \"%1\""
 
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_480x680]
-"Icon"="C:\\Tools\\icon\\480x680_icon.ico"
-"MUIVerb"="Resize image to 480x680"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_480x680\command]
-@="wscript \"C:\\Tools\\batch\\vbs\\Resize_480x680.vbs\" \"%1\""
-
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_960x540]
-"Icon"="C:\\Tools\\icon\\960x540_icon.ico"
-"MUIVerb"="Resize image to 960x540"
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_960x540\command]
-@="wscript \"C:\\Tools\\batch\\vbs\\Resize_960x540.vbs\" \"%1\""
-
-
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_customImg]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_customImg]
 "Icon"="C:\\Tools\\icon\\custom_icon.ico"
 "MUIVerb"="Resize image (Custom)"
 
-[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_customImg\command]
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_customImg\command]
 @="\"C:\\Tools\\batch\\Resize_Image_Custom.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_480x680]
+"Icon"="C:\\Tools\\icon\\480x680_icon.ico"
+"MUIVerb"="Resize image to 480x680"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\10_480x680\command]
+@="wscript \"C:\\Tools\\batch\\vbs\\Resize_480x680.vbs\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_960x540]
+"Icon"="C:\\Tools\\icon\\960x540_icon.ico"
+"MUIVerb"="Resize image to 960x540"
+
+[HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\11_960x540\command]
+@="wscript \"C:\\Tools\\batch\\vbs\\Resize_960x540.vbs\" \"%1\""
+
