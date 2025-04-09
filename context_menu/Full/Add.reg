@@ -70,7 +70,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_enhanceImg]
 "Icon"="C:\\Tools\\icon\\enhance_icon.ico"
-"MUIVerb"="Enhance image"
+"MUIVerb"="Enhance Image"
 
 [HKEY_CLASSES_ROOT\*\shell\AutoScripts\shell\09_enhanceImg\command]
 @="\"C:\\Tools\\batch\\Enhance_image.bat\" \"%1\""
