@@ -61,7 +61,7 @@ Advanced features (Not available in lite version)
 
 10. Add CRC
 11. Mod CRC
-
+12. Image enhancer
 
 Script by Shinrin, thank to:
 + https://github.com/FFmpeg/FFmpeg
